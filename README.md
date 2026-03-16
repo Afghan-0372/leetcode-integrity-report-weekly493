@@ -17,10 +17,12 @@ My engine identified several high-density clusters where participants submitted 
 - **Method:** N-Gram Token Matching.
 
 
-![Cluster Visualization](./images/Cluster_Q3_1.png)`
+![Cluster Visualization](./images/Cluster_Q3_1.png)
+![Cluster Visualization](./images/Cluster_Q3_11.png)
+
+**YOU CAN SEE THE SCALE OF THE ISSUE IN FULL PDF WITH EVIDENCE, VIOLATIONS and IMAGES**
 
 ---
-
 ### The Methodology (Why the Engine is Accurate):
 
 To avoid 'False Positives' and catch 'Smart' cheaters, the engine uses a multi-stage detection pipeline:
