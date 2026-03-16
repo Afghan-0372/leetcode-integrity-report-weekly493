@@ -71,8 +71,11 @@ The complete detailed report with all clusters, rank numbers, and evidence is av
 I hope this data helps the LeetCode Engineering Team improve the contest environment. Modern cheating has evolved beyond simple text matching, and detection systems must evolve too.
 
 **"Current LeetCode System vs My Engine"**
+
 **Current LeetCode System:** Text-based (easily bypassed by renaming variables).
+
 **My Engine:** AST-structural (bypassing is 10x harder and requires full logic rewrite).
+
 **My Engine Scalability:** My pipeline can scan 50,000+ solutions in under 5 minutes.
 
 **Contact:** pooacc2@gmail.com
