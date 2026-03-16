@@ -54,11 +54,6 @@ If one player used a for inside an if, and the other used a while without an if,
 3.3 **How i solve it:** A 40-character filter eliminates such cases. We analyze only the meaningful code (Q3 and Q4), where the probability of a 90% random structure match is practically zero.
 3.4 **Result:** The engine ignores the 'noise' from simple problems and focuses on complex algorithms where code theft is most visible.
 
-**Conclusion:**
-I hope this data helps the LeetCode Engineering Team to improve the contest environment. Modern cheating has evolved beyond simple text matching, and our detection systems must evolve too.
-
-
-
 ---
 
 ## 📄 Full Audit Report
@@ -70,12 +65,11 @@ The complete detailed report with all clusters, rank numbers, and evidence is av
 ## 🎯 Goal
 I hope this data helps the LeetCode Engineering Team improve the contest environment. Modern cheating has evolved beyond simple text matching, and detection systems must evolve too.
 
-**"Current LeetCode System vs My Engine"**
-
-**Current LeetCode System:** Text-based (easily bypassed by renaming variables).
-
-**My Engine:** AST-structural (bypassing is 10x harder and requires full logic rewrite).
-
-**My Engine Scalability:** My pipeline can scan 50,000+ solutions in under 5 minutes.
+| Feature | Current LeetCode Detection | My AST-Structural Engine |
+| :--- | :--- | :--- |
+| **Detection Basis** | Text/Token-based | **AST Logic Skeleton** |
+| **Bypass Difficulty** | Low (Rename variables/comments) | **High (Requires full logic rewrite)** |
+| **Scalability** | Unknown | **50,000+ solutions in < 5 mins** |
+| **Codebase** | Heavy/Legacy | **Extremely Lean (< 2,000 lines)** |
 
 **Contact:** pooacc2@gmail.com
