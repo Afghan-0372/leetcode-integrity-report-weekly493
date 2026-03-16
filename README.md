@@ -17,7 +17,7 @@ My engine identified several high-density clusters where participants submitted 
 - **Method:** N-Gram Token Matching.
 
 
-> `![Cluster Visualization](./images/Cluster_Q3_1.png)`
+![Cluster Visualization](./images/Cluster_Q3_1.png)`
 
 ---
 
@@ -61,7 +61,7 @@ I hope this data helps the LeetCode Engineering Team to improve the contest envi
 
 ## 📄 Full Audit Report
 The complete detailed report with all clusters, rank numbers, and evidence is available here:
-[**Download/View Full PDF Report (v1.0)**](./Weekly_Contest_Integrity_Report.pdf)
+[**Download/View Full PDF Report (v1.0)**](./LEETCODE_AUDIT_REPORT_.pdf)
 
 ---
 
