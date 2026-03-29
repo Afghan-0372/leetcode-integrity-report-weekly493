@@ -20,14 +20,15 @@ class Engine:
                      p(r"Explanation:"): "Text", p(r"auto solve = \[&\]"): "Lambda Rec"},
             "short": {p(r"// Step \d+:"): "Steps", p(r"// Time Complexity:"): "Complexity"}
         }
+        
 
     def _prepare_solutions(self, solutions):
         for s in solutions:
             lm = s['logic_masked'] = ut.normalize(s['code'])
             s.update({
                 'signature': ut.get_logic_signature(s['code']),
-                'ast_fp': ut.get_ast_fingerprint(s['code']),
-                'has_ai_noise': ut.detect_ai_noise(s['code']),
+                'ast_fp': ut.get_ast_c(s['code']),
+                'has_ai_noise': ut.detect_ai_noise_c(s['code']),
                 'ng_set': set(lm[k:k+4] for k in range(len(lm)-3)) if len(lm) >= 10 else set()
             })
 
@@ -41,7 +42,7 @@ class Engine:
             print(f"Analyzing {q_name} (N={N})")
 
             self._prepare_solutions(solutions)
-            
+
             t = time.time()
             if N <= 1200:
                 results = [cw.compare_worker_serial(i, solutions) for i in range(N)]
