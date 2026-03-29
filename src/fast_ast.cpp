@@ -46,7 +46,6 @@ extern "C" {
                 else if (word == "if") res_buf += "If|";
             }
         }
-
         if (!res_buf.empty()) res_buf.pop_back();
         return res_buf.c_str();
     }
