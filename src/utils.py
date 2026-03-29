@@ -48,12 +48,8 @@ def parse_dump(file_path):
                     })
     return parsed
 
-
-
 #============================
 # PRE COMPILE FOR RE:
-
-
 # RE LOGIC SIGNATURE
 RE_COMMENTS = re.compile(r'//.*|/\*[\s\S]*?\*/')
 RE_LOGIC = re.compile(r'(\.\w+\(|parent\[|size\[|edges\[|id\+\+|idCounter\+\+|\+1|\.sort\(|find\(|union\()')
@@ -86,15 +82,12 @@ def get_logic_signature(code):
         code = RE_COMMENTS.sub('', code)
         important_calls = RE_LOGIC.findall(code)
         return "".join(important_calls)
-
-
 #=================================
 # GET AST
 def get_ast_c(code: str) -> str:
     res = lib_ast(code.encode('utf-8'))
     return res.decode('utf-8')
-        
-
+    
 #=================================================
 ###### NOISE AI
 
